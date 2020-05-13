@@ -31,8 +31,7 @@
   border-radius: 100%;
 }
 
-html,
-body {
+.homepage body {
   margin: 0;
   padding: 0;
 }
@@ -85,4 +84,14 @@ main.about {
     flex-direction: row;
     text-align: center;
   }
+}
+
+main.skills {
+  display: flex;
+  flex-direction: column;
+  background-color: steelblue;
+  width: 100%;
+  height: 100vh;
+  max-width: 1500px;
+  margin: 0 auto;
 }
