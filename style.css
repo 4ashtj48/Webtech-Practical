@@ -36,3 +36,38 @@ body {
     width: 100%;
   }
 }
+
+main.about {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  max-width: 1500px;
+  margin: 0 auto;
+
+}
+
+.about section {
+  display: flex;
+  flex-direction: row;
+}
+
+.about img {
+  max-width: 50vw;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.about p {
+  width: 70%;
+  padding: 0 15px;
+}
+
+@media (max-width: 550px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
