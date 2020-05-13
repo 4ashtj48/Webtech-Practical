@@ -6,11 +6,21 @@
   height: 100vh;
   max-width: 1500px;
   margin: 0 auto;
+  background-color: steelblue;
 }
 
 .homepage div {
   width: 50%;
   padding: 0 15px;
+}
+
+.homepage h1 {
+  color: floralwhite;
+  font-family: monospace;
+}
+.homepage h2 {
+  color: floralwhite;
+  font-family: monospace;
 }
 
 .homepage div img {
@@ -40,13 +50,12 @@ body {
 main.about {
   display: flex;
   flex-direction: column;
-
+  background-color: steelblue;
   align-items: center;
   width: 100%;
   height: 100vh;
   max-width: 1500px;
   margin: 0 auto;
-
 }
 
 .about section {
@@ -61,13 +70,19 @@ main.about {
   border-radius: 100%;
 }
 
+.about h1 {
+  color: floralwhite;
+}
+
 .about p {
   width: 70%;
   padding: 0 15px;
+  color: floralwhite;
 }
 
 @media (max-width: 550px) {
   .about {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
   }
+}
