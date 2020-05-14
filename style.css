@@ -6,7 +6,6 @@
   height: 100vh;
   max-width: 1500px;
   margin: 0 auto;
-  background-color: steelblue;
 }
 
 .homepage div {
@@ -31,9 +30,12 @@
   border-radius: 100%;
 }
 
-.homepage body {
+html,
+body {
   margin: 0;
   padding: 0;
+  background-image: url("images/moroccan-flower-dark.png");
+  /*white background*/
 }
 @media (max-width: 550px) {
   .homepage {
@@ -49,7 +51,6 @@
 main.about {
   display: flex;
   flex-direction: column;
-  background-color: steelblue;
   align-items: center;
   width: 100%;
   height: 100vh;
@@ -68,15 +69,25 @@ main.about {
   height: 100%;
   border-radius: 100%;
 }
+.about div {
+  width: 80%;
+  padding: 0 15px;
+}
 
 .about h1 {
   color: floralwhite;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .about p {
-  width: 70%;
   padding: 0 15px;
   color: floralwhite;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text_width {
+  width: 40%;
+  padding-right: 15px;
 }
 
 @media (max-width: 550px) {
@@ -89,9 +100,31 @@ main.about {
 main.skills {
   display: flex;
   flex-direction: column;
-  background-color: steelblue;
+
   width: 100%;
   height: 100vh;
   max-width: 1500px;
   margin: 0 auto;
+}
+
+.div.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.widthhalf {
+  width: 50%;
+}
+
+.progress_bar {
+  height: 30px;
+  width: 80%;
+  background: red;
+  border-radius: 10px;
+}
+
+.progress_bar div {
+  height: 100%;
+  background: yellow;
+  border-radius: 10px;
 }
