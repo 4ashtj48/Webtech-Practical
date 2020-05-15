@@ -3,7 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="contact.js"></script>
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <a href="index.html">Homepage</a>
+      <a href="about.html">About_Me</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+      <a href="cookies.html">Cookie_policy</a>
+    </nav>
+    <main class="contact">
+      <div class="contact_form" onload="main()">
+        <form action="google.com" id="contact-form" method="get">
+          <p><input type="text" name="name" id="name" placeholder="" /></p>
+          <p id="nameRequiredError" style="display: none; color: red;">
+            Name is required
+          </p>
+          <p><input type="email" name="email" id="email" placeholder="" /></p>
+          <p id="emailRequiredError" style="display: none; color: red;">
+            Email is required
+          </p>
+          <p>
+            I agree to being contacted by the methods above;
+            <input type="radio" name="terms" value="yes" id="yesTerms" />
+          </p>
+          <p></p>
+          <p id="termsRequiredError" style="display: none; color: red;">
+            You must tell us if you want to be contacted or not.
+          </p>
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+      <div>
+        <img src="images/pic-test.jpg" alt="pic about me" />
+      </div>
+    </main>
+  </body>
 </html>
