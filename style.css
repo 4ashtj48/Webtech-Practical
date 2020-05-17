@@ -181,8 +181,17 @@ main.contact {
 
 nav {
   position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 nav a {
-  position: fixed;
+  float: left;
+  display: block;
+
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
+/* fill navigation bar*/
